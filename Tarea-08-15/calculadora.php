@@ -29,37 +29,40 @@
     <b class="m-2">
         <?php
         // print_r($_POST);
-        $a = $_POST['Numero_1'];
-        $b = $_POST['Numero_2'];
-        $opt = $_POST['opt'];
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-        switch ($opt) {
-            case '1': // suma
-                $r = 'Resultado: ' . $a + $b;
-                break;
+            $a = $_POST['Numero_1'];
+            $b = $_POST['Numero_2'];
+            $opt = $_POST['opt'];
 
-            case '2'; // resta
-                $r = 'Resultado: ' . $a - $b;
-                break;
+            switch ($opt) {
+                case '1': // suma
+                    $r = 'Resultado: ' . $a + $b;
+                    break;
 
-            case '3'; // multiplicacion
-                $r = 'Resultado: ' . $a * $b;
-                break;
+                case '2'; // resta
+                    $r = 'Resultado: ' . $a - $b;
+                    break;
 
-            case '4'; // divsion
-                if ($b != 0) {
+                case '3'; // multiplicacion
+                    $r = 'Resultado: ' . $a * $b;
+                    break;
 
-                    $r = 'Resultado: ' . $a / $b;
-                } else {
-                    $r = 'No se puede divir entre 0';
-                }
-                break;
+                case '4'; // divsion
+                    if ($b != 0) {
 
-            default:
-                echo ("Opcion invalida");
-                break;
+                        $r = 'Resultado: ' . $a / $b;
+                    } else {
+                        $r = 'No se puede divir entre 0';
+                    }
+                    break;
+
+                default:
+                    echo ("Opcion invalida");
+                    break;
+            }
+            echo ($r);
         }
-        echo ($r);
         ?>
     </b>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

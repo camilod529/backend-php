@@ -25,26 +25,29 @@
     </form>
     <b class="m-2">
         <?php
-        $cop = $_POST['cop'];
-        $opt = $_POST['opt'];
-        switch ($opt) {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-            case '1': // dolares = 0.00024
-                $r = $cop * 0.00024;
-                echo ("$cop COP son $r USD");
-                break;
-            case '2': // euros = 0.00022 
-                $r = $cop * 0.00022;
-                echo ("$cop COP son $r EUR");
-                break;
-            case '3': // rupias = 0.020
-                $r = $cop * 0.020;
-                echo ("$cop COP son $r Rupias Indias");
-                break;
+            $cop = $_POST['cop'];
+            $opt = $_POST['opt'];
+            switch ($opt) {
 
-            default:
-                echo ("Opcion invalida");
-                break;
+                case '1': // dolares = 0.00024
+                    $r = $cop * 0.00024;
+                    echo ("$cop COP son $r USD");
+                    break;
+                case '2': // euros = 0.00022 
+                    $r = $cop * 0.00022;
+                    echo ("$cop COP son $r EUR");
+                    break;
+                case '3': // rupias = 0.020
+                    $r = $cop * 0.020;
+                    echo ("$cop COP son $r Rupias Indias");
+                    break;
+
+                default:
+                    echo ("Opcion invalida");
+                    break;
+            }
         }
         ?>
     </b>
