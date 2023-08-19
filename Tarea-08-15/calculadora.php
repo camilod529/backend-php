@@ -32,39 +32,39 @@
         $a = $_POST['Numero_1'];
         $b = $_POST['Numero_2'];
         $opt = $_POST['opt'];
-        
+
         switch ($opt) {
             case '1': // suma
-                $r ='Resultado: '. $a + $b;
+                $r = 'Resultado: ' . $a + $b;
                 break;
 
             case '2'; // resta
-                $r ='Resultado: '. $a - $b;
+                $r = 'Resultado: ' . $a - $b;
                 break;
 
             case '3'; // multiplicacion
-                $r ='Resultado: '. $a * $b;
+                $r = 'Resultado: ' . $a * $b;
                 break;
-                
-            case '4'; // divsion
-                if ($b != 0){
 
-                    $r ='Resultado: '. $a / $b;
+            case '4'; // divsion
+                if ($b != 0) {
+
+                    $r = 'Resultado: ' . $a / $b;
                 } else {
                     $r = 'No se puede divir entre 0';
                 }
                 break;
 
             default:
-                echo("Opcion invalida");
+                echo ("Opcion invalida");
                 break;
         }
-        echo($r);
+        echo ($r);
         ?>
     </b>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>

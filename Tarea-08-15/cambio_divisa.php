@@ -28,21 +28,22 @@
         $cop = $_POST['cop'];
         $opt = $_POST['opt'];
         switch ($opt) {
+
             case '1': // dolares = 0.00024
                 $r = $cop * 0.00024;
-                echo("$cop COP son $r USD");
+                echo ("$cop COP son $r USD");
                 break;
             case '2': // euros = 0.00022 
                 $r = $cop * 0.00022;
-                echo("$cop COP son $r EUR");
+                echo ("$cop COP son $r EUR");
                 break;
             case '3': // rupias = 0.020
                 $r = $cop * 0.020;
-                echo("$cop COP son $r Rupias Indias");
+                echo ("$cop COP son $r Rupias Indias");
                 break;
-            
+
             default:
-                echo("Opcion invalida");
+                echo ("Opcion invalida");
                 break;
         }
         ?>
@@ -50,7 +51,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
