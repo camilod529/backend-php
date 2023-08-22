@@ -12,8 +12,8 @@
 <body>
     <h2>Cambio divisa</h2>
     <form action="cambio_divisa.php" method="post" class="m-2 col-6">
-        <label class="form-label">Valor (COP)</label>
-        <input class="form-control" type="text" name="cop">
+        <label for="money" class="form-label">Valor (COP)</label>
+        <input id="money" class="form-control" type="number" min="0" name="cop">
         <br />
         <select name="opt" class="mt-2 form-select" form-select">
             <option value="1">D&oacute;lares</option>

@@ -12,11 +12,11 @@
 <body>
     <h2>Calculadora</h2>
     <form action="calculadora.php" method="post" class="m-2 col-6">
-        <label class="form-label">Numero 1</label>
-        <input class="form-control" type="text" name="Numero 1">
+        <label for="num1" class="form-label">Numero 1</label>
+        <input id="num1" class="form-control" type="number" name="Numero 1">
         <br />
-        <label class="form-label">Numero 2</label>
-        <input class="form-control" type="text" name="Numero 2">
+        <label for="num2" class="form-label">Numero 2</label>
+        <input id="num2" class="form-control" type="number" name="Numero 2">
         <select name="opt" class="mt-2 form-select" form-select">
             <option value="1">Suma</option>
             <option value="2">Resta</option>
@@ -67,7 +67,7 @@
     </b>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-        </script>
+    </script>
 </body>
 
 </html>
