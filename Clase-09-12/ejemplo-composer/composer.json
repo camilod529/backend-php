@@ -1,0 +1,20 @@
+{
+    "name": "camilo/ejemplo-composer",
+    "description": "Este es un ejemplo de composer en php",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Camilo\\EjemploComposer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "chokpikLaptop",
+            "email": "camilod529@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "kint-php/kint": "^5.0"
+    }
+}
